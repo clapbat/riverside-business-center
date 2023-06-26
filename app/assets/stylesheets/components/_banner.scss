@@ -1,9 +1,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
-  background-image: asset-url("ponte.jpg");
-  background-size: cover;
+  height: 500px;
 }
 
 .banner h1 {
@@ -39,3 +37,7 @@
   padding-bottom: 2rem;
 }
 
+.home_video {
+  min-width: 100%;
+  min-height: 100%;
+}
