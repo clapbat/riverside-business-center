@@ -16,26 +16,51 @@
         <a class="nav-link" href="#">Contacts</a>
       </li>
     </ul>
-    <div class="d-flex" role="search">
-      <button class="btn btn-flat" type="submit">Sign in</button>
+    <div>
+      <button class="btn btn-flat">Sign in</button>
     </div>
 </div>
 
-
-<div class="banner" >
-    <%= video_tag "riverside_video.mp4", :class => 'home_video', autoplay: :autoplay, loop: :loop, muted: :muted %>
-    <h1><strong>Your new workspace tech skills</strong></h1>
+<div class="banner">
+  <%= video_tag "riverside_video.mp4", :class => 'home_video', autoplay: :autoplay, loop: :loop, muted: :muted %>
+  <div class="banner-content">
+    <h1><strong>Your new workspace</strong></h1>
     <p>Discover a flexible space and a solution to move your business forward.</p>
     <a class="btn btn-flat" href="#">Get Started</a>
+  </div>
 </div>
 
-<div class="about">
-  <h2>About us</h2>
-    <p>
-      Riverside was established in 2022 as a contribution to the vision of a world where professionals are owners of their working time and space conditions while allowing for all the flexibility of one’s lifestyle.
-      <br><br>
-      Located in the center of Parque das Nações in the city of Lisbon to accommodate any professional in need of a comfortable and productive working space. In the surrounding areas you can enjoy the riverside view of Tejo river, walking pathways, rental bicycles and the best Portuguese food and drinks. We have single desks in a shared room that provide a private setup, individual meeting rooms and possibility to host company adresses.
-      <br><br>
-      Our space is equipped with the most up to date technologies, including high bandwith wi-fi internet, big TV displays on the meeting rooms, kitchen ammenities including coffee machine and snack machine. Check out our gallery page for a more closer look.
-    </p>
+<div class="cards-container d-flex justify-content-around">
+  <div class="card">
+    <div class="content">
+      <div class="title-card">Personal edition</div>
+      <div class="price-card">$39.99</div>
+      <div class="description-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+    </div>
+    <button class="btn btn-flat">
+      Buy now
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="content">
+      <div class="title-card">Personal edition</div>
+      <div class="price-card">$39.99</div>
+      <div class="description-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+    </div>
+    <button class="btn btn-flat">
+      Buy now
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="content">
+      <div class="title-card">Personal edition</div>
+      <div class="price-card">$39.99</div>
+      <div class="description-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+    </div>
+    <button class="btn btn-flat">
+      Buy now
+    </button>
+  </div>
 </div>
