@@ -40,4 +40,8 @@
 .home_video {
   min-width: 100%;
   min-height: 100%;
+  object-fit: cover;
+  top: 0;
+  z-index: -2;
 }
+
