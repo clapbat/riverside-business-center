@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   get 'pages/home'
   root to: 'pages#home'
+  get '/services', to: 'pages#services'
   get '/about', to: 'pages#about'
-  get '/terms&privacy', to: 'pages#terms&privacy'
+  get '/termsandprivacy', to: 'pages#termsandprivacy'
+  get '/gallery', to: 'pages#gallery'
+  get '/contacts', to: 'pages#contacts'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
