@@ -12,32 +12,37 @@
   border-radius: 10px;
   background-color: #004899;
   background: rgb(0, 73, 136);
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .content {
   padding: 20px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .price-card {
   color: white;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 20px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .description-card {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 10px;
   font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .title-card {
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.64);
   margin-top: 10px;
   font-size: 25px;
   letter-spacing: 1px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .services {
