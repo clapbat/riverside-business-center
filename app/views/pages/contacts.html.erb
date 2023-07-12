@@ -8,4 +8,25 @@
   <div><a class="orange-button">Sign in</a></div>
 </div>
 
-Contacts
+<div class="location-card d-flex justify-content-center">
+  <div id='map' style='width: 500px; height: 400px;'></div>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mapboxgl.accessToken = 'pk.eyJ1IjoiY2xhcGJhdCIsImEiOiJjbGp6c20zMGcwMGxyM2VtbzlnbGdpa2Z2In0.jEuuZbUstVEZ5ijM8xRkcQ';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-9.097792, 38.770049], // Specify the longitude and latitude of the desired center point
+        zoom: 12 // Specify the desired zoom level
+      });
+
+      map.addControl(new mapboxgl.NavigationControl());
+
+      var marker = new mapboxgl.Marker()
+        .setLngLat([-9.097792, 38.770049]) // Specify the longitude and latitude of the marker's location
+        .addTo(map);
+    });
+  </script>
+</div>
