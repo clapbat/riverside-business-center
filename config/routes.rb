@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get '/termsandprivacy', to: 'pages#termsandprivacy'
   get '/gallery', to: 'pages#gallery'
   get '/contacts', to: 'pages#contacts'
+  get '/virtualoffice', to: 'pages#virtualoffice'
+  get '/coworking', to: 'pages#coworking'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
