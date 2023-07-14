@@ -26,3 +26,22 @@
   background: #d9cbf0;
   color: white;
 }
+
+.plan-button {
+  background-color: #FF9670;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.625em 0.75em;
+  text-decoration: none;
+}
+
+.plan-button:hover, .plan-button:focus {
+  background-color: #006DCC;
+  text-decoration: none;
+}
