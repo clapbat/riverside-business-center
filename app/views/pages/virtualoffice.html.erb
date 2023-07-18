@@ -142,7 +142,7 @@
               </li>
             </ul>
             <div class="action">
-              <a class="plan-button" href="#">
+              <a class="plan-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                 Get in touch
               </a>
             </div>
@@ -154,25 +154,55 @@
 </div>
 
 <!-- Basic Plan offcanvas -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <h4 class="offcanvas-title mx-4" id="offcanvasRightLabel">Complete form:</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
-    ...
+  <div class="offcanvas-body mx-4">
+    <%= form_with(model: @user, method: :post) do |form| %>
+      <%= form.label :name %>
+      <%= form.text_field :name, class: "form-control" %>
+      <%= form.label :email %>
+      <%= form.email_field :email, class: "form-control" %>
+      <%= form.label :phone %>
+      <%= form.telephone_field :phone, class: "form-control" %>
+      <%= form.label :industry %>
+      <%= form.text_field :industry, class: "form-control" %>
+      <%= form.label :description %>
+      <%= form.text_area :description, class: "form-control", id: "exampleFormControlTextarea1", rows: "3" %>
+      <%= form.label :start_date %>
+      <%= form.text_field :start_date, class: "form-control", placeholder: 'DD-MM-YY' %>
+      <div class= 'form-button mt-4'>
+        <%= form.submit "Send", class: 'orange-button' %>
+      </div>
+    <% end %>
   </div>
 </div>
 
 <!-- Premium Plan offcanvas -->
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+<div class="offcanvas offcanvas-start show w-50" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <h4 class="offcanvas-title mx-4" id="offcanvasLabel">Complete form:</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body small">
-    ...
+  <div class="offcanvas-body mx-4">
+    <%= form_with(model: @user, method: :post) do |form| %>
+      <%= form.label :name %>
+      <%= form.text_field :name, class: "form-control" %>
+      <%= form.label :email %>
+      <%= form.email_field :email, class: "form-control" %>
+      <%= form.label :phone %>
+      <%= form.telephone_field :phone, class: "form-control" %>
+      <%= form.label :industry %>
+      <%= form.text_field :industry, class: "form-control" %>
+      <%= form.label :description %>
+      <%= form.text_area :description, class: "form-control", id: "exampleFormControlTextarea1", rows: "3" %>
+      <%= form.label :start_date %>
+      <%= form.text_field :start_date, class: "form-control", placeholder: 'DD-MM-YY' %>
+      <div class= 'form-button mt-4'>
+        <%= form.submit "Send", class: 'orange-button' %>
+      </div>
+    <% end %>
   </div>
 </div>

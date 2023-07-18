@@ -72,3 +72,7 @@ group :test do
 end
 
 gem "font-awesome-sass", "~> 6.1"
+
+gem 'bootstrap', '~> 5.2.3'
+
+gem "simple_form"
