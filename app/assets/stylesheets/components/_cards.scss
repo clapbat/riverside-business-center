@@ -122,7 +122,7 @@
 }
 
 .plan .features li + * {
-  margin-top: 0.75rem;
+  margin-top: 0.40rem;
 }
 
 .plan .features .icon {
@@ -136,11 +136,6 @@
   height: 20px;
 }
 
-.plan .features .icon svg {
-  width: 14px;
-  height: 14px;
-}
-
 .plan .features + * {
   margin-top: 1.25rem;
 }
@@ -150,4 +145,18 @@
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+// VIRTUAL OFFICE //
+
+.plan .title-virtual {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #425675;
+  text-align: center;
+}
+
+.plan .subtitle-virtual {
+  color: #425675;
+  text-align: center;
 }
