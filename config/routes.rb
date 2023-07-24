@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contact_forms/new'
+  get 'contact_forms/create'
   get 'pages/home'
   root to: 'pages#home'
   get '/services', to: 'pages#services'
