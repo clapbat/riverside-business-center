@@ -10,7 +10,6 @@
     <li class="nav-item mx-2"><%= link_to "Gallery", gallery_path, class: "nav-link" %></li>
     <li class="nav-item mx-2"><%= link_to "Contacts", contacts_path, class: "nav-link" %></li>
   </ul>
-  <div><a class="orange-button">Sign in</a></div>
 </div>
 
 <div class="banner">
@@ -18,7 +17,7 @@
   <div class="banner-content">
     <h1><strong>Your new workspace</strong></h1>
     <p>Discover a flexible space and a solution to move your business forward.</p>
-    <a class="btn btn-flat" href="#">Get Started</a>
+    <button class="orange-button"><%= link_to "Get Started", services_path, style: "text-decoration: none; color: white;" %></button>
   </div>
 </div>
 

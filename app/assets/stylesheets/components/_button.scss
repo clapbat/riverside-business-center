@@ -16,10 +16,12 @@
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #FF9670;
+  background: #f0794e;
   transition: background 0.3s ease;
   text-decoration: none;
   font-family: 'Noto Sans', sans-serif;
+  border: 0;
+  outline: 0;
 }
 
 .orange-button:hover {
@@ -28,7 +30,7 @@
 }
 
 .plan-button {
-  background-color: #FF9670;
+  background-color: #f0794e;
   border-radius: 6px;
   color: #fff;
   font-weight: 500;
