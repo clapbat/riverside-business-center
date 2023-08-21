@@ -8,6 +8,6 @@ class AdminMailer < ApplicationMailer
                     else
                       'New Form Submission'
                     end
-    mail(to: 'lisbonriverside@gmail.com', subject: email_subject)
+    mail(to: 'clarissapbatista@gmail.com', subject: email_subject)
   end
 end
