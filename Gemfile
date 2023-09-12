@@ -76,3 +76,5 @@ gem "font-awesome-sass", "~> 6.1"
 gem 'bootstrap', '~> 5.2.3'
 
 gem "simple_form"
+
+gem 'listen', '>= 3.3', '< 4.0'
