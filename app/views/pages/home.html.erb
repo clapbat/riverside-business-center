@@ -13,16 +13,16 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page"><%= link_to "Services", services_path %></a>
+            <a class="nav-link active" aria-current="page"><%= link_to "Services", services_path, style: "text-decoration: none; color:black font-family: 'Noto Sans', sans-serif; font-size: 20px;" %></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"><%= link_to "About us", about_path %></a>
+            <a class="nav-link"><%= link_to "About us", about_path, style: "text-decoration: none; color:black, font-family: 'Noto Sans', sans-serif; font-size: 20px;" %></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"><%= link_to "Gallery", gallery_path %></a>
+            <a class="nav-link"><%= link_to "Gallery", gallery_path, style: "text-decoration: none; color: font-family: 'Noto Sans', sans-serif; font-size: 20px;" %></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"><%= link_to "Contacts", contacts_path %></a>
+            <a class="nav-link"><%= link_to "Contacts", contacts_path, style: "text-decoration: none; color:black font-family: 'Noto Sans', sans-serif; font-size: 20px;" %></a>
           </li>
         </ul>
       </div>
@@ -30,12 +30,14 @@
   </div>
 </nav>
 
-<div class="banner">
-  <%= video_tag "riverside_video.mp4", :class => 'home_video', autoplay: :autoplay, loop: :loop, muted: :muted %>
-  <div class="banner-content">
-    <h1><strong>Your new workspace</strong></h1>
-    <p>Discover a flexible space and a solution to move your business forward.</p>
-    <button class="orange-button"><%= link_to "Get Started", services_path, style: "text-decoration: none; color: white;" %></button>
+<div class="banner-container">
+  <div class="banner">
+    <%= video_tag "riverside_video.mp4", :class => 'home_video', autoplay: :autoplay, loop: :loop, muted: :muted %>
+    <div class="banner-content">
+      <h1><strong>Your new workspace</strong></h1>
+      <p>Discover a flexible space and a solution to move your business forward.</p>
+      <button class="orange-button"><%= link_to "Get Started", services_path, style: "text-decoration: none; color: white;" %></button>
+    </div>
   </div>
 </div>
 
